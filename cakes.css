@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Forum&family=Inter:wght@300&family=Kaushan+Script&family=Lato:wght@700&family=Quicksand:wght@600&display=swap');
+
+body {
+    height: 125vh;
+    background-size:contain;
+    font-family: sans-serif;
+    margin-top: 100px;
+}
+header {
+    background-color:  hsl(37, 17%, 75%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px #5f4431(0, 0, 0, 0.1);
+}
+header * {
+    display: inline;
+}
+header ul{
+    margin-left: 400px;
+    margin-top: 30px;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    color: #5f4431;
+    font-size: 25px;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar-items{
+    text-align: center;
+    display: inline;
+}
+.navbar-icons{
+    display: inline; 
+    float: right;
+}
+header li a :hover {
+    background-color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+header img {
+    width: 300px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 43px;
+    /* overflow: hidden; */
+}
+/* ---------------Cakes cakes cakes------------------ */
+/*******Category List Category List Category List*******/
+
+#classic{
+    font-family: 'Kaushan Script', cursive;
+    color: #5f4431;
+    font-size: 48px;
+    margin: 100px 650px 0px;
+    /* position: fixed;
+    text-align: center; */
+}
+#signature{
+    font-family: 'Kaushan Script', cursive;
+    color: #5f4431;
+    font-size: 48px;
+    margin: 10px 650px 0px;
+    /* position: fixed;
+    text-align: center; */
+}
+#choco{
+    font-family: 'Kaushan Script', cursive;
+    color: #5f4431;
+    font-size: 48px;
+    margin: 10px 620px 0px;
+    /* position: fixed;
+    text-align: center; */
+}
+.category-list {
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1.5px groove #ffda86;
+	border: 1.5px groove #ffda86;
+    border-radius: 5px;
+}
+.row{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.category-list img {
+	width: 250px;
+    height: 226px;
+}
+.category-list h2 {
+	font-weight: 500;
+	margin: 0px;
+	font-size: 30px;
+	font-family: "Forum", sans-serif;
+}
+.category-list a {
+	text-decoration: none;
+    color:  #5f4431;
+}
+.category-list p {
+	font-size: 18px;
+	color: #967729;
+	margin-top: 5px;
+}
+/* ----------------Footer Footer Footer------------------ */
+footer {
+    background-color:#CAC2B53D; /* Background color for the footer */
+    color:black; /* Text color for the footer content */
+    padding: 30px 0; /* Padding to separate content from the edges */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style the individual sections within the footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section{
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+.footer-section-about img{
+    width: 300px;
+    height: 88px;
+    margin-left: 0px;
+}
+.footer-section-about{
+    width: 554px;
+    color: black;
+    left: 150px;
+    font-family: 'Cormorant Upright', serif;    
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+#contactus{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+}
+#follow{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+    color: #5f4431;
+}
+#follow a{
+    font-size: 35px;
+    padding-right: 15px;
+    color: #5f4431;
+}
+
+/* Style the links */
+.footer-section a {
+    display: inline;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Style the copyright notice */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid rgb(70, 43, 43);
+}
+
+/* Media query to adjust styling for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex: none;
+        margin: 0;
+        text-align: center;
+    }
+}

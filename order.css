@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Forum&family=Inter:wght@300&family=Kaushan+Script&family=Lato:wght@700&family=Quicksand:wght@600&display=swap');
+
+body {
+    height: 125vh;
+    background-size:contain;
+    font-family: sans-serif;
+    margin-top: 100px;
+    background-image: url('images/back.png');
+    background-repeat: no-repeat;
+}
+header {
+    background-color:  hsl(0, 0%, 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px #5f4431(0, 0, 0, 0.1);
+}
+header * {
+    display: inline;
+}
+header ul{
+    margin-left: 400px;
+    margin-top: 30px;
+}
+header li {
+    margin: 10px;
+}
+header li a {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    color: #5f4431;
+    font-size: 25px;
+    text-decoration: none;
+}
+header li a :hover {
+    background-color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar-items{
+    text-align: center;
+    display: inline;
+}
+.navbar-icons{
+    display: inline; 
+    float: right;
+}
+
+header img {
+    width: 300px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 43px;
+    /* overflow: hidden; */
+}
+/* -------------- Form Form Form Form ------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+/* * {
+  font-family: 'Open Sans', sans-serif;
+} */
+
+.signupSection {
+  margin: 40px 200px;
+  padding: 50px;
+  overflow: hidden;
+  font-family: 'Forum' ,sans-serif;
+  border: 2px dashed hsl(38, 52%, 59%);
+  border-radius: 5px;
+}
+form h2, ul{
+    margin-right: 50px;
+    color: #5f4431;
+}
+form h2{
+    font-size: 30px;
+    text-align: center;
+}
+form ul{
+    font-size: 20px;
+    text-align: right;
+}
+.signupSection {
+  width: 1000px;
+  height: 480px;
+  text-align: left;
+  display: flex;
+  color: rgb(0, 0, 0);
+  /* box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5); */
+}
+
+#cake-image {
+  width: 400px;
+  /* background: rgb(255, 255, 255); */
+  padding: 10px 10px;
+  /* border-right: 5px solid rgba(30, 30, 30, .8); */
+  /* h2 {
+    padding-top: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  } */
+
+}
+
+.signupForm {
+  width: 70%;
+  padding: 0px 0;
+  /* background: rgb(255, 255, 255); */
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 350px;
+  border: 1px solid rgb(251, 251, 251);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #cac2b4;
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1.5px solid #cda560;
+  background: #edbb64;
+  font-size: 22px;
+  font-family: 'Forum' ,sans-serif;
+  color: #5f4431;
+  margin-top: 20px;
+  margin-right: 100px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+}
+
+
+
+/* ----------------Footer Footer Footer------------------ */
+footer {
+    background-color:#CAC2B53D; /* Background color for the footer */
+    color:black; /* Text color for the footer content */
+    padding: 30px 0; /* Padding to separate content from the edges */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style the individual sections within the footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section{
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+.footer-section-about img{
+    width: 300px;
+    height: 88px;
+    margin-left: 0px;
+}
+.footer-section-about{
+    width: 554px;
+    color: black;
+    left: 150px;
+    font-family: 'Cormorant Upright', serif;    
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+#contactus{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+}
+#follow{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+    color: #5f4431;
+}
+#follow a{
+    font-size: 35px;
+    padding-right: 15px;
+    color: #5f4431;
+}
+
+/* Style the links */
+.footer-section a {
+    display: inline;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Style the copyright notice */
+.footer-bottom {
+    text-align: center;
+    /* Background color for the copyright area */
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid rgba(70, 43, 43, 0.362);
+}
+
+/* Media query to adjust styling for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex: none;
+        margin: 0;
+        text-align: center;
+    }
+}

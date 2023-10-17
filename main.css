@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Forum&family=Inter:wght@300&family=Kaushan+Script&family=Lato:wght@700&family=Quicksand:wght@600&display=swap');
+
+body {
+    height: 125vh;
+    background-size:contain;
+    font-family: sans-serif;
+    margin-top: 80px;
+}
+body img{
+    width: 100%;
+    height: 799px;
+    display: inline;
+}
+header {
+    background-color:  hsl(0, 0%, 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px #5f4431(0, 0, 0, 0.1);
+}
+header * {
+    display: inline;
+}
+header ul{
+    margin-left: 400px;
+    margin-top: 30px;
+}
+header li {
+    margin: 10px;
+}
+header li a {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    color: #5f4431;
+    font-size: 25px;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar-items{
+    text-align: center;
+    display: inline;
+}
+.navbar-icons{
+    display: inline; 
+    float: right;
+}
+
+header img {
+    width: 300px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 43px;
+    /* overflow: hidden; */
+}
+/* --------------------------Banner Banner Banner---------------------------------- */
+/* .banner{
+    background-image: url("C:/Users/user/Downloads/ASAP/Occasions/images/kadarius-seegars-XDTTR8HJM5E-unsplash.jpg");
+} */
+.banner{
+    width: 100%
+}
+.banner-text{
+   font-family: 'Kaushan Script', cursive;
+   font-size: 30px;
+   color: #502323;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 55%;
+}
+.banner-text button{
+    padding: 11px 35px;
+	background: white;
+	border: none;
+	border-radius: 50px;
+	margin-top: 15px;
+	color: black;
+    font-size: 25px;
+    font-family: 'Forum', serif;
+}
+.banner-text button:hover{
+    background-color:#f6c05d;
+    color: black;
+    cursor: pointer;
+}
+.delivery{
+    background-color: #604432;
+    height: 100px;
+    top: 890px;
+}
+.delivery h2{
+	font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    padding-top:30px ;
+    text-decoration: wavy;
+    /* margin-top: 50px; */
+}
+
+/* ---------------------Categories------------------------- */
+#top-picks{
+    font-family: 'Kaushan Script', cursive;
+    color: #5f4431;
+    font-size: 48px;
+    margin: 50px 620px 0px;
+    /* position: fixed;
+    text-align: center; */
+}
+.category-list {
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1.5px groove #ffda86;
+	border: 1.5px groove #ffda86;
+    border-radius: 5px;
+}
+.row{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.category-list img {
+	width: 250px;
+    height: 226px;
+}
+.category-list h2 {
+	font-weight: 500;
+	margin: 0px;
+	font-size: 30px;
+	font-family: "Forum", sans-serif;
+}
+.category-list a {
+	text-decoration: none;
+    color:  #5f4431;
+}
+.category-list p {
+	font-size: 18px;
+	color: #967729;
+	margin-top: 5px;
+}
+/* -----------------------Offer offer offer----------------------------- */
+/******** BANNER SECTION BANNER SECTION*******/
+.offer-section {
+	margin-top: 80px;
+	/* padding-bottom: 80px; */
+    background-color: #604432;
+    height: 500px;
+}
+.offer-detail {
+	margin-top: 10%;
+    width: 720px;
+}
+.offer-detail p {
+    font-size: 30px;
+	margin-bottom: 15px;
+	color: #efe5cff3;
+	font-weight: 400;
+	font-family: 'Kaushan Script', cursive;
+	/* text-shadow: 0 0 2px black; */
+}
+.offer-detail h1 {
+	margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	color: #efe5cff3;
+	font-weight: bolder;
+	/* line-height: 170px; */
+}
+.offer-detail .button-1 {
+	padding: 5px 35px;
+	font-size: 16px;
+	background: #ffffff;
+	border: none;
+	border-radius: 50px;
+	margin-top: 5px;
+	color: black;
+	font-family: 'Forum', sans-serif;
+	font-weight: 500
+}
+.offer-img img {
+	/* margin-top: 30px; */
+	width: 697px;
+	height: 500px;
+	float: right;
+}
+@media screen and (max-width: 768px) {
+	.top-header {
+		height: auto;
+	}
+	.banner-detail h5 {
+		font-size: 55px;
+		margin-bottom: 10px;
+	}
+	.banner-detail h1 {
+		font-size: 75px;
+		line-height: 90px;
+		margin-bottom: 10px;
+	}
+	.banner-img img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.top-header {
+		height: auto;
+	}
+	.banner-detail {
+		margin-top: 15%;
+	}
+	.banner-detail h5 {
+		font-size: 55px;
+		margin-bottom: 10px;
+	}
+	.banner-detail h1 {
+		font-size: 75px;
+		line-height: 90px;
+		margin-bottom: 10px;
+	}
+	.banner-img img {
+		margin-top: 60px;
+		height: auto;
+		width: 100%;
+	}
+}
+/* ---------Occasions Occasions Occasions--------- */
+.occasions{
+    height: 30px;
+}
+/* --------------------------footer footer footer---------------------------- */
+/* Apply some general styles to the footer */
+footer {
+    background-color:#CAC2B53D; /* Background color for the footer */
+    color:black; /* Text color for the footer content */
+    padding: 30px 0; /* Padding to separate content from the edges */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style the individual sections within the footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section{
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+.footer-section-about img{
+    width: 300px;
+    height: 88px;
+    margin-left: 0px;
+}
+.footer-section-about{
+    width: 554px;
+    color: black;
+    left: 150px;
+    font-family: 'Cormorant Upright', serif;    
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+#contactus{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+    color: #5f4431;
+}
+#follow{
+    font-family: 'Forum', serif; 
+    margin: 80px 0px 0px 80px;
+    color: #5f4431;
+}
+#follow a{
+    font-size: 35px;
+    padding-right: 15px;
+    color: #5f4431;
+}
+
+/* Style the links */
+.footer-section a {
+    display: inline;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Style the copyright notice */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid rgb(70, 43, 43);
+}
+
+/* Media query to adjust styling for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex: none;
+        margin: 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occasions-Order</title>
+    <link href="order.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+     <!----------------- Navbar Navbar Navbar Navbar---------------- -->
+     <header>
+        <img src="images\logo-removebg-preview.png">
+         <nav>
+            <div class="navbar">
+                <ul class="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="#">Decor</a></li>
+                    <li><a href="#contactus">Contact</a></li>
+                </ul>
+                <ul class="navbar-icons" >
+                    <li class="nav-item 1"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="nav-item 2"><a class="nav-link" href="#"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
+             
+         </nav>
+     </header>
+
+     <!------------- Form Form Form Form -------------- -->
+     
+     <div class="signupSection">
+        <div class="cake-image">
+            <img id="cake-image" src="" alt="Selected Cake">
+            <h2 id="cake-name"></h2>
+            <p id="cake-price"></p>
+        </div>
+        <form action="#" method="POST" class="signupForm" name="signupform">
+          <h2>Order Your Cake</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="qty" >Quantity </label><br>
+              <input type="number" class="inputFields" id="qty" name="Quantity" min="1" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="date">Delivery Date  </label><br>
+              <input type="date" class="inputFields" id="date" name="Delivery-date"  value="" oninput="return passwordValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="caption">What's the wish?</label><br>
+              <input type="text" class="inputFields" id="caption" name="caption"  value="" required/>
+            </li>
+            <!-- <li>
+              <label for="img">Picture (optional)</label><br>
+              <input type="file" name="customer_photo" accept="image/*">            
+            </li> -->
+            <li id="center-btn">
+              <input type="submit" id="join-btn" name="Order" alt="Order" value="Order">
+            </li>
+          </ul>
+        </form>
+      </div>
+ 
+    
+     <!-- Footer Footer Footer Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section-about">
+                <img src="images/logo-removebg-preview.png">
+                <p>At Occasions, we're more than just a cake shop; 
+                we're the sweet storytellers of your celebrations. Our journey began in 2006, 
+                driven by a deep love for baking and a vision to create something truly special. 
+                What started as a small, cozy kitchen operation has now expanded to 17 outlets, 
+                each serving up delicious memories.</p>
+            </div>
+    
+            <div class="footer-section contact" id="contactus">
+                <h2>Contact Us</h2>
+                <p>Email: info@occasions.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: East Fort, Thrissur</p>
+            </div>
+    
+            <div class="footer-section follow" id="follow">
+                <h2>Follow Us</h2>
+                <a href="/facebook"><i class="fa fa-facebook-square"></i></a>
+                <a href="/instagram"><i class="fa fa-instagram"></i></a>
+                <a href="/whatsapp"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2023 Occasions. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+            // Define a mapping of product IDs to cake images (adjust as needed)
+            const cakeImages = {
+                '1': 'images/cake5.png',
+                '2': 'images/white-forest.jpg',
+                '3': 'images/crustoforest-g-100-green-forest-cake-mix-898.jpg',
+                '4': 'images/cake4.png',
+                // Add more mappings for other cakes
+            };
+    
+            window.onload = function() {
+            // Get the product ID from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productID = urlParams.get('productID');
+
+            // Get the cake image element and set the image source
+            const cakeImageElement = document.getElementById('cake-image');
+            if (cakeImages[productID]) {
+                cakeImageElement.src = cakeImages[productID];
+            }
+        };
+    </script>
+</body>
+</html>
